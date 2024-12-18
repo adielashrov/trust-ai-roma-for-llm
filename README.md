@@ -8,3 +8,4 @@ This project contains three projects:
 3. The LLM project
 
 Good Luck,
+Adiel & Nati
