@@ -5,8 +5,8 @@ The following instrcutions are for installing and executing the roma-audio-class
 ### Setting up the environement
 1. Start by making sure that you have the following packages installed:
 
-`sudo apt-get install python3.9-dev
-sudo  apt-get  install libasound2-dev`
+`sudo apt-get install python3.9-dev`
+`sudo  apt-get  install libasound2-dev`
 
 2. Create a virtual environment using conda:
 
