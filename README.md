@@ -4,7 +4,7 @@ This project is for the paper - Statistical Verification of Modern Neural Networ
 This project contains three projects:
 
 1. The exact count comparison
-2. The Audio recognition project
+2. The Audio recognition project - See the [readme](roma-audio-classification/readme.md) for more details.
 3. The LLM project
 
 Good Luck,
