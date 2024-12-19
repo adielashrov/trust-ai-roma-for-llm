@@ -1,8 +1,10 @@
 # RoMA - Audio - Classification
 
-The following instrcutions are for installing and executing the roma-audio-classification case study on a linux/ubuntu machine with a GPU properly configured.
+The following instructions are for installing and executing the roma-audio-classification case study on a linux/ubuntu machine with a GPU properly configured.
 
-### Setting up the environement
+This tutorial assumes you have the CUDA driver 11.7 installed.
+
+### Setting up the environment
 1. Start by making sure that you have the following packages installed:
 
 `sudo apt-get install python3.9-dev`
@@ -11,7 +13,7 @@ The following instrcutions are for installing and executing the roma-audio-class
 
 2. Create a virtual environment using conda:
 
-`conda create -n roma-audio python=3.9`
+`conda create -n roma-audio python=3.10`
 
 3. Activate the environment:
 
@@ -19,7 +21,7 @@ The following instrcutions are for installing and executing the roma-audio-class
 
 5. Install the requirements file
 
-`pip install -r requirements.txt`
+``
 
 ### Executing the experiment
 
