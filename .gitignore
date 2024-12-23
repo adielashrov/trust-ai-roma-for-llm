@@ -1,0 +1,43 @@
+/roma-audio-classification/.idea/inspectionProfiles/*.xml
+/roma-audio-classification/.idea/*.xml
+/roma-audio-classification/.idea/*.iml
+
+# Model files
+*.h5
+*.pth
+*.onnx
+*.weights
+*.pkl
+
+# Log files
+*.log
+processed/
+experiments/**/log_*
+experiments/**/error_log_*
+
+# Results and temporary files
+*.csv
+*.xlsx
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Specific directories
+exact-count/experiments/
+roma-audio-classification/models/
+roma-vs-exact_count/experiments/
+
+
+*.safetensors
+.idea/
+models/**/model.safetensors
+models/**/config.json
+models/**/special_tokens_map.json
+models/**/tokenizer.json
+models/**/tokenizer_config.json
+models/**/vocab.txt
+/roma-llm/experiments/best_model/*.txt
+/roma-llm/models/best_model/*.json
+/roma-llm/models/best_model/*.txt
+/roma-llm/models/final_model/*.json
+/roma-llm/models/final_model/*.txt
