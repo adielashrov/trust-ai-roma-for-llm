@@ -25,4 +25,8 @@ The following instructions are for installing and executing the Exact Count algo
 #### Exact-count on acas-xu models
 `python ver_acas_new_algorithm.py`
 
+### Experiments results
+
+The experiments results can be found in the following [link](https://drive.google.com/drive/folders/1KOEkhwcs-tjPOB1uDQnLD_4iQKPC62nJ?usp=drive_link).
+
 Good Luck!
