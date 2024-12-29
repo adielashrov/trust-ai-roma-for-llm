@@ -1,3 +1,4 @@
+
 # RoMA - Audio - Classification
 
 The following instructions are for installing and executing the roma-audio-classification case study on a linux/ubuntu machine with a GPU properly configured.
@@ -21,7 +22,7 @@ This tutorial assumes you have the CUDA driver 11.7 installed.
 
 5. Install the requirements file
 
-``
+`pip install -r requirements.txt`
 
 ### Executing the experiment
 
