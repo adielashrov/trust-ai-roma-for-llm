@@ -5,7 +5,6 @@
 # Model files
 *.h5
 *.pth
-*.onnx
 *.weights
 *.pkl
 
