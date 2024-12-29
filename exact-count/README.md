@@ -1,9 +1,7 @@
 
 # RoMA - Exact Count
 
-The following instructions are for installing and executing the Exact Count alogithm on a linux/ubuntu machine with a GPU properly configured.
-
-This tutorial assumes you have the CUDA driver 11.7 installed.
+The following instructions are for installing and executing the Exact Count algorithm on a linux/ubuntu machine.
 
 ### Setting up the environment
 
