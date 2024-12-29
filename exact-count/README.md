@@ -1,30 +1,30 @@
-# RoMA - Audio - Classification
 
-The following instructions are for installing and executing the roma-audio-classification case study on a linux/ubuntu machine with a GPU properly configured.
+# RoMA - Exact Count
+
+The following instructions are for installing and executing the Exact Count alogithm on a linux/ubuntu machine with a GPU properly configured.
 
 This tutorial assumes you have the CUDA driver 11.7 installed.
 
 ### Setting up the environment
-1. Start by making sure that you have the following packages installed:
 
-`sudo apt-get install python3.9-dev`
+1. Create a virtual environment using conda:
 
-`sudo  apt-get  install libasound2-dev`
+`conda create -n exact-count python=3.10`
 
-2. Create a virtual environment using conda:
+2. Activate the environment:
 
-`conda create -n roma-audio python=3.10`
-
-3. Activate the environment:
-
-`conda activate roma-audio`
+`conda activate exact-count`
 
 5. Install the requirements file
 
-``
+`pip install -r requirements.txt`
 
 ### Executing the experiment
 
-`python main.py`
+#### Exact-count on simple models
+`python ver_basic_models_new_algorithm.py`
+
+#### Exact-count on acas-xu models
+`python ver_acas_new_algorithm.py`
 
 Good Luck!
