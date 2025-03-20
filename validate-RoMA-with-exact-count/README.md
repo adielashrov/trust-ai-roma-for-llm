@@ -13,7 +13,7 @@ The following instructions are for installing and executing the Exact Count algo
 
 `conda activate exact-count`
 
-5. Install the requirements file
+3. Install the requirements file
 
 `pip install -r requirements.txt`
 
