@@ -1,0 +1,16 @@
+/cs/labs/guykatz/adielas/roma_llm/venv/lib/python3.11/site-packages/numpy/core/_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+/cs/labs/guykatz/adielas/roma_llm/venv/lib/python3.11/site-packages/scipy/stats/_morestats.py:1120: UserWarning: The optimal lambda is -3420.324654274178, but the returned lambda is the constrained optimum to ensure that the maximum or the minimum of the transformed data does not overflow in float64.
+  lmax = boxcox_normmax(x, method='mle', optimizer=optimizer)
+/cs/labs/guykatz/adielas/roma_llm/venv/lib/python3.11/site-packages/scipy/stats/_morestats.py:1120: UserWarning: The optimal lambda is -107.35068085346585, but the returned lambda is the constrained optimum to ensure that the maximum or the minimum of the transformed data does not overflow in float64.
+  lmax = boxcox_normmax(x, method='mle', optimizer=optimizer)
+/cs/labs/guykatz/adielas/roma_llm/venv/lib/python3.11/site-packages/scipy/stats/_morestats.py:1120: UserWarning: The optimal lambda is -162.97779489342076, but the returned lambda is the constrained optimum to ensure that the maximum or the minimum of the transformed data does not overflow in float64.
+  lmax = boxcox_normmax(x, method='mle', optimizer=optimizer)
+/cs/labs/guykatz/adielas/roma_llm/venv/lib/python3.11/site-packages/numpy/core/_methods.py:206: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/cs/labs/guykatz/adielas/roma_llm/venv/lib/python3.11/site-packages/numpy/core/_methods.py:198: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/cs/labs/guykatz/adielas/roma_llm/venv/lib/python3.11/site-packages/scipy/stats/_morestats.py:1120: UserWarning: The optimal lambda is -161.54120272273045, but the returned lambda is the constrained optimum to ensure that the maximum or the minimum of the transformed data does not overflow in float64.
+  lmax = boxcox_normmax(x, method='mle', optimizer=optimizer)
+/cs/labs/guykatz/adielas/roma_llm/venv/lib/python3.11/site-packages/scipy/stats/_morestats.py:2248: RuntimeWarning: invalid value encountered in divide
+  w = (y - xbar) / s
