@@ -1,7 +1,7 @@
 
 # RoMA - Exact Count
 
-The following instructions are for installing and executing the Exact Count algorithm on a linux/ubuntu machine.
+The following instructions are for installing and executing the Exact Count vs. RoMA algorithms on a linux/ubuntu machine.
 
 ### Setting up the environment
 
@@ -24,6 +24,24 @@ The following instructions are for installing and executing the Exact Count algo
 
 #### Exact-count on acas-xu models
 `python ver_acas_new_algorithm.py`
+
+#### RoMA on simple models
+
+Set the model name and relevant folder at the begining of roma_vs_exact_count.py file (lines 13-21), and then execute.
+
+Example - basic models:
+`model_name = "model_2_20.h5"`
+`model_name_for_log = model_name[:-3]`  
+`str_model_tf = f"models/{model_name}"`
+
+Example - AcasXU models:
+`model_name = "ACASXU_run2a_2_7_batch_2000.h5"`  
+``model_name_for_log = model_name[:-3]``
+``str_model_tf = f"acas_models_h5/{model_name}"``
+
+ - Run the roma algorithm 
+
+`python roma_vs_exact_count.py`
 
 ### Experiments results
 
