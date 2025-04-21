@@ -1,17 +1,16 @@
+# RoMA vs. Exact Count
 
-# RoMA - Exact Count
-
-The following instructions are for installing and executing the Exact Count vs. RoMA algorithms on a linux/ubuntu machine.
+The following instructions are for installing and executing the RoMA vs. Exact Count algorithms on a linux/ubuntu machine.
 
 ### Setting up the environment
 
 1. Create a virtual environment using conda:
 
-`conda create -n exact-count python=3.10`
+`conda create -n roma-vs-exact-count python=3.10`
 
 2. Activate the environment:
 
-`conda activate exact-count`
+`conda activate roma-vs-exact-count`
 
 3. Install the requirements file
 
@@ -19,38 +18,57 @@ The following instructions are for installing and executing the Exact Count vs. 
 
 ### Executing the experiment
 
-#### Exact-count on simple models
-`python ver_basic_models_new_algorithm.py`
+#### Exact-Count on simple models
 
-#### Exact-count on acas-xu models
-`python ver_acas_new_algorithm.py`
+ 1. First you need to choose the model you wish to execute exact_count on.
+ 2. For example, if you want to execute exact count on the model `model_2_20.onnx`, you need to set the following vairables accordingly (this basic model has 2 input variables):
+ 3. `NETWORK_FILENAME = "onnx_models/model_2_20.onnx"`
+ 4. `NUM_OF_INTERVALS = 2 # Should match the number in the input_file name` 
+ 5. Then you can execute: 
+ 6. `python ver_basic_models_new_algorithm.py`
+ 7. The results should appear in a `verification_model_2_20_*.log` file.
+
+*Note that you can control the epsilon and depth parameters at the `parameter_sweep` method.* 
 
 #### RoMA on simple models
 
-Set the model name and relevant folder at the begining of roma_vs_exact_count.py file (lines 13-21), and then execute.
+In this example, we continue with the previous `model_2_20` model.
 
-Example - basic models:
+ 1. Set the model path at the begining of roma_vs_exact_count.py file (uncomment lines 14-16).
+ 2. for instance, `model_name = "model_2_20.h5"`(note that the ending for the models here is `.h5`).
+ 3. Set the `roma_mode = 'simple_model'` on line 136.
+ 4. Execute the RoMA algorithm:
+ 5. `python roma_vs_exact_count.py`
+ 6. The results should appear in the `logfile_model_2_20_*.log` and at the `stats_model_2_20_*.csv` files.
 
-`model_name = "model_2_20.h5"`
+*Note that you can control the number of sampled points at the `sample_size` variable.* 
 
-`model_name_for_log = model_name[:-3]`  
+#### Exact-Count on acas-xu models
 
-`str_model_tf = f"models/{model_name}"`
+ 1. First you need to choose the model you wish to execute exact_count on.
+ 2. For example, if you want to execute exact count on the model `ACASXU_experimental_v2a_2_7.onnx`, you need to set the following vairables accordingly:
+ 3. `NETWORK_FILENAME = "acasxu/ACASXU_experimental_v2a_2_7.onnx"`
+ 5. Then you can execute: 
+ 6. `python ver_acas_new_algorithm.py`
+ 7. The results should appear in a `verification_ACASXU_experimental_v2a_2_7_*.log` file.
 
-Example - AcasXU models:
+*Note that you can control the epsilon and depth parameters at the `parameter_sweep` method.* 
 
-`model_name = "ACASXU_run2a_2_7_batch_2000.h5"`  
+#### RoMA on acas-xu models
 
-``model_name_for_log = model_name[:-3]``
+In this example, we continue with the previous `ACASXU_experimental_v2a_2_7` model.
 
-``str_model_tf = f"acas_models_h5/{model_name}"``
+ 1. Set the model path at the begining of roma_vs_exact_count.py file (uncomment lines 19-21).
+ 2. `model_name = "ACASXU_run2a_2_7_batch_2000.h5"`(note that the ending for the models here is `.h5`).
+ 3. Set the `roma_mode = 'acas_model'` on line 136.
+ 4. Execute the RoMA algorithm:
+ 5. `python roma_vs_exact_count.py`
+ 6. The results should appear in the `logfile_ACASXU_run2a_2_7_batch_2000_*.log` and at the `stats_ACASXU_run2a_2_7_batch_2000_*.csv` files.
 
- - Run the roma algorithm 
-
-`python roma_vs_exact_count.py`
+*Note that you can control the number of sampled points at the `sample_size` variable.* 
 
 ### Experiments results
 
-The experiments results can be found in the following [link](https://drive.google.com/drive/folders/1KOEkhwcs-tjPOB1uDQnLD_4iQKPC62nJ?usp=drive_link).
+The full experiments results can be found in the following [link](https://drive.google.com/drive/folders/1KOEkhwcs-tjPOB1uDQnLD_4iQKPC62nJ?usp=drive_link).
 
 Good Luck!
