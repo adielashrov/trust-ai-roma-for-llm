@@ -32,13 +32,17 @@ Set the model name and relevant folder at the begining of roma_vs_exact_count.py
 Example - basic models:
 
 `model_name = "model_2_20.h5"`
+
 `model_name_for_log = model_name[:-3]`  
+
 `str_model_tf = f"models/{model_name}"`
 
 Example - AcasXU models:
 
 `model_name = "ACASXU_run2a_2_7_batch_2000.h5"`  
+
 ``model_name_for_log = model_name[:-3]``
+
 ``str_model_tf = f"acas_models_h5/{model_name}"``
 
  - Run the roma algorithm 
