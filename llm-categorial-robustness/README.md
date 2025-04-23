@@ -1,6 +1,6 @@
 
 
-# RoMA - LLM
+# RoMA - LLM Categorial Robustness
 
 The following instructions are for installing and executing the roma-llm case study on a linux/ubuntu machine with a GPU properly configured.
 
