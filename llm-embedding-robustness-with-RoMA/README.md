@@ -1,6 +1,6 @@
 
 
-# RoMA - LLM
+# Measuring LLM Embedding Robustness with RoMA
 
 The following instructions are for installing and executing the roma-llm case study on a linux/ubuntu machine with a GPU properly configured.
 
