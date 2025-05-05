@@ -33,7 +33,7 @@ This should create the `full_modified_sentences` folder with the perturbed sente
  2. Download a model folder (best_model or final_model) from the [models_folder](https://drive.google.com/drive/folders/1HijpyTd5HhTYV1qqxHhrXdZaw6JJ_k1N?usp=drive_link) to the created `models` directory.
  3. The selected model for execution is configured in line #10 in the file `predict_sentence_dataset_full.py`.
 
-##### Step 2.2 - Run the Predicetion Code
+##### Step 2.2 - Run the Prediction Code
 
 `python predict_sentence_dataset_full.py`
 
