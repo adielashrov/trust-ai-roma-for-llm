@@ -13,7 +13,7 @@ The following instructions are for installing and executing the `roma-llm` embed
 
 `conda activate roma-llm`
 
-3. Install the requirements file
+3. Install the requirements file:
 
 `pip install -r requirements.txt`
 
