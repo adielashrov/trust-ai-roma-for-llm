@@ -1,10 +1,10 @@
 
-
 # Measuring LLM Embedding Robustness with RoMA
 
-The following instructions are for installing and executing the roma-llm case study on a linux/ubuntu machine with a GPU properly configured.
+The following instructions are for installing and executing the `roma-llm` embedding robustness case study on a Linux/Ubuntu machine with a properly configured GPU.
 
-### Setting up the environment
+### Setting Up the Environment
+
 1. Create a virtual environment using conda:
 
 `conda create -n roma-llm python=3.10`
@@ -17,20 +17,37 @@ The following instructions are for installing and executing the roma-llm case st
 
 `pip install -r requirements.txt`
 
-### Executing the experiment
+### Executing the Experiment
 
-**Pre-requisite** - you should download the GLUE dataset to a folder named data.
+#### 1. Creating the Dataset
 
-#### 1. Creating the dataset
+`python create_simple_synonyms_sentence_dataset.py`
 
-`python create_full_sentence_dataset.py`
+This should create the `full_modified_sentences_synonyms` folder with the perturbed sentences. 
 
-#### 2. Running prediction on the dataset
+#### 2. Running Predictions on the Dataset
 
-`python predict_sentence_dataset_full.py`
+**Recommendation**: Execute the prediction code using a GPU.
+##### Step 2.1 - Download a Model into the Project Directory
 
-#### 3. Running RoMA analysis on the predictions
+ 1. Create a folder named `models` inside the project directory.
+ 2. Download a model folder (best_model or final_model) from the [models_folder](https://drive.google.com/drive/folders/1HijpyTd5HhTYV1qqxHhrXdZaw6JJ_k1N?usp=drive_link) to the created `models` directory.
+ 3. The selected model for execution is configured on line 10 of the `predict_synonyms_sentence_dataset_full.py` file.
 
-`python analysis_full_prediction.py`
+##### Step 2.2 - Run the Prediction Code
 
-Good Luck!
+`python predict_synonyms_sentence_dataset_full.py`
+
+*Note:* You should see a log file created, in which the status of the currently processed file is documented.
+
+The output of this step is a folder named `full_sentiment_predictions_synonyms`.
+
+#### 3. Running RoMA Analysis on the Predictions
+
+Execute the following command to run the RoMA analysis:
+
+`python analysis_full_prediction_synonyms.py`
+
+The output of this step is the `results` folder with the `final_report_full_sentiment_predictions_synonyms_*.csv` file.
+
+Good luck!
