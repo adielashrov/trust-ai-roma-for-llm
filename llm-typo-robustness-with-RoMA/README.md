@@ -16,7 +16,7 @@ The following instructions are for installing and executing the roma-llm typo ro
 
 `pip install -r requirements.txt`
 
-### Executing the experiment
+### Executing the Experiment
 
 #### 1. Creating the Dataset
 
