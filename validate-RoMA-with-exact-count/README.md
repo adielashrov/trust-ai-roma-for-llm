@@ -67,8 +67,4 @@ In this example, we continue with the previous `ACASXU_experimental_v2a_2_7` mod
 
 *Note that you can control the number of sampled points at the `sample_size` variable.* 
 
-### Experiments results
-
-The full experiments results can be found in the following [link](https://drive.google.com/drive/folders/1KOEkhwcs-tjPOB1uDQnLD_4iQKPC62nJ?usp=drive_link).
-
 Good Luck!
