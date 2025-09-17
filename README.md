@@ -10,16 +10,16 @@ This project contains four sub-projects:
 
 # Citation:
 
-To cite this work please use the following format:
+To cite this work, please use the following format:
 
-@inproceedings{LeAsKa25,
-  title={Statistical Runtime Verification for LLMS via Robustness Estimation},
-  author={Levy, Natan and Ashrov, Adiel and Katz, Guy},
-  booktitle={Runtime Verification: 25th International Conference, RV 2025, Graz, Austria, September 15--19, 2025, Proceedings},
-  pages={457},
-  year={2025},
-  organization={Springer Nature}
-}
+    @inproceedings{LeAsKa25,
+      title={Statistical Runtime Verification for LLMS via Robustness Estimation},
+      author={Levy, Natan and Ashrov, Adiel and Katz, Guy},
+      booktitle={Runtime Verification: 25th International Conference, RV 2025, Graz, Austria, September 15--19, 2025, Proceedings},
+      pages={457},
+      year={2025},
+      organization={Springer Nature}
+    }
 
 Good Luck,
 
