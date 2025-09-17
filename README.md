@@ -1,5 +1,5 @@
-# Towards Robust LLMs: an Adversarial Robustness Measurement Framework
-This project is the code for the paper - [Towards Robust LLMs: an Adversarial Robustness Measurement Framework](https://arxiv.org/pdf/2504.17723).
+# Statistical Runtime Verification for LLMs via Robustness Estimation
+This project is the code for the paper - [Statistical Runtime Verification for LLMs via Robustness Estimation](https://arxiv.org/pdf/2504.17723).
 
 This project contains four sub-projects:
 
@@ -13,7 +13,7 @@ This project contains four sub-projects:
 To cite this work please use the following format:
 
       @misc{LeAsKa25,
-      title={Towards Robust LLMs: an Adversarial Robustness Measurement Framework},
+      title={Statistical Runtime Verification for LLMs via Robustness Estimation},
       author={Levy, Natan and Ashrov, Adiel and Katz, Guy},
       note = {{Technical Report}. \url{https://arxiv.org/pdf/2504.17723}},
       year={2025}
